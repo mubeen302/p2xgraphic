@@ -537,7 +537,7 @@ header .header-content{height: 100%; width: 100%; overflow: auto; overflow-x: hi
 }
 @media (max-width: 767px) {
   header{width: 270px; left: -270px;}
-  header .hamburger-icon-3{top: 53px;}
+  header .hamburger-icon-3{top: 91px;}
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 08 - FOOTER */
@@ -1129,7 +1129,10 @@ _:-ms-fullscreen, :root .quote .quote-nav.active{opacity: 1;}
 
 
 @media (max-width: 390px) {
-   
+    .swiper-style-banner .logo{
+        top: 0px;
+        margin: 0px -11px;
+    }
 }
 
 
