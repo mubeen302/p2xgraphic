@@ -1135,7 +1135,13 @@ _:-ms-fullscreen, :root .quote .quote-nav.active{opacity: 1;}
     }
 }
 
-
+@media (max-width: 499px){
+    .banner-nav .follow {
+       
+        right: 7px;
+       
+    }
+}
 
 
 
