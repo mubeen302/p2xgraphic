@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-pk">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/Normalize.css.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="simplelightbox.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+
+    <link href="img/p2xgraphic.ico" rel="shortcut icon" />
+    <title>p2xgraphic</title>
+</head>
+
+<body>
+    <div class="row">
+        <header>
+            <nav class="nav">
+                <div class="logo-img"><img src="img/p2xgraphic.png"></div>
+                <ul class="navigation_bar">
+                    <li><a href="#">LOGO</a></li>
+                    <li><a href="#">ILLUSTRATION</a></li>
+                    <li><a href="#">STATONARY</a></li>
+                    <li><a href="#">UI/UXDESGIN</a></li>
+                </ul>
+            </nav>
+            <h1 class="header_h1">P2xgraphic assets to mind your Creativity</h1>
+        </header>
+
+        <div class="container-logo">
+            <h1 class="container-heading">LOGO</h1>
+            <div class="container-r ">
+                <div class="img-container">
+                    <div><a href="imgtest.jpg" class=""><img class="img-setting" src="imgtest.jpg"></a></div>
+                    <h3 class="img-h3">logo</h3>
+                    <p class="img-p"> mds ksdm d</p>
+                </div>
+                <div class="img-container">
+                    <a href="imgtest.jpg" class="big"><img class="img-setting" src="imgtest.jpg"></a>
+                    <h3 class="img-h3">logo</h3>
+                    <p class="img-p"> mds ksdm d</p>
+                </div>
+                <div class="img-container">
+                    <a href="imgtest.jpg" class="big"><img class="img-setting" src="imgtest.jpg"></a>
+                    <h3 class="img-h3">logo</h3>
+                    <p class="img-p"> mds ksdm d</p>
+                </div>
+                <div class="img-container">
+                    <a href="imgtest.jpg" class="big"><img class="img-setting" src="imgtest.jpg"></a>
+                    <h3 class="img-h3">logo</h3>
+                    <p class="img-p"> mds ksdm d</p>
+                </div>
+                <div class="img-container">
+                    <a href="imgtest.jpg" class="big"><img class="img-setting" src="imgtest.jpg"></a>
+                    <h3 class="img-h3">logo</h3>
+                    <p class="img-p"> mds ksdm d</p>
+                </div>
+                <div class="img-container">
+                    <a href="imgtest.jpg" class="big"><img class="img-setting" src="imgtest.jpg"></a>
+                    <h3 class="img-h3">logo</h3>
+                    <p class="img-p"> mds ksdm d</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="bg-text">
+        
+
+            <div >
+                <div class="copyright">
+                    &copy; 2017 All rights reserved. Development with <span class="fa fa-heart"></span> by <a href="https://themeforest.net/user/unionagency" target="blank">UnionAgency.</a>
+                </div>
+            </div>
+            <div class="socail-media-container">
+                <p>Follow me:</p>
+                <div class="follow">
+                    <a class="item" href="https://www.instagram.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="item" href="https://www.pinterest.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="item" href="https://twitter.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <!-- footer -->
+
+
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="simple-lightbox.min.js"></script>
+    <script>
+        $(function() {
+            var $gallery = $('.img-container a').simpleLightbox();
+
+            $gallery.on('show.simplelightbox', function() {
+                    console.log('Requested for showing');
+                })
+                .on('shown.simplelightbox', function() {
+                    console.log('Shown');
+                })
+                .on('close.simplelightbox', function() {
+                    console.log('Requested for closing');
+                })
+                .on('closed.simplelightbox', function() {
+                    console.log('Closed');
+                })
+                .on('change.simplelightbox', function() {
+                    console.log('Requested for change');
+                })
+                .on('next.simplelightbox', function() {
+                    console.log('Requested for next');
+                })
+                .on('prev.simplelightbox', function() {
+                    console.log('Requested for prev');
+                })
+                .on('nextImageLoaded.simplelightbox', function() {
+                    console.log('Next image loaded');
+                })
+                .on('prevImageLoaded.simplelightbox', function() {
+                    console.log('Prev image loaded');
+                })
+                .on('changed.simplelightbox', function() {
+                    console.log('Image changed');
+                })
+                .on('nextDone.simplelightbox', function() {
+                    console.log('Image changed to next');
+                })
+                .on('prevDone.simplelightbox', function() {
+                    console.log('Image changed to prev');
+                })
+                .on('error.simplelightbox', function(e) {
+                    console.log('No image found, go to the next/prev');
+                    console.log(e);
+                });
+
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>
