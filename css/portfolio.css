@@ -16,7 +16,7 @@ body {
 
 
 header {
-    background-image: url(../img/Image_HERO_LHOP_shutterstock_1068442454.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,29 +140,46 @@ footer .follow {
     padding: 0 12px;
     color: #fff;
 }
-.copyright{
+
+.copyright {
     margin-top: 13px;
     text-align: center;
 }
-.socail-media-container{
+
+.socail-media-container {
     text-align: center;
 }
 
 
+
 @media (min-width: 1200px) {
-  .follow-style-3 a:hover{color: #ed145b;}
+    .follow-style-3 a:hover {
+        color: #ed145b;
+    }
 }
 
 @media (min-width: 1200px) {
-  .follow .item:hover:before{transform: scale(1); -webkit-transform: scale(1);}
-  footer .follow .item:hover,
-  .follow .item:hover{color: #fff;background-color: #ed145b;border: 1px solid #ed145b;}
-  footer .copyright a:hover{color: #ed145b;}
+    .follow .item:hover:before {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    footer .follow .item:hover,
+    .follow .item:hover {
+        color: #fff;
+        background-color: #ed145b;
+        border: 1px solid #ed145b;
+    }
+
+    footer .copyright a:hover {
+        color: #ed145b;
+    }
 }
 
 
 .navigation_bar {
     display: flex;
+    padding-top: 30px;
 }
 
 .img-container {
@@ -177,8 +194,10 @@ footer .follow {
 
 .navigation_bar li a {
     display: block;
-    padding: 10px;
+    padding: 8px;
     color: #fff;
+    font-size: 15px;
+    margin-left: 8px;
 }
 
 .logo-img img {
@@ -186,13 +205,13 @@ footer .follow {
 }
 
 .logo-img {
-    padding: 10px;
+    padding: 33px 10px 10px;
 }
 
 .header_h1 {
     text-align: center;
     color: #fff;
-    padding: 0px 10px;
+    padding: 10px;
 }
 
 .solial_media_link {
@@ -208,7 +227,7 @@ footer .follow {
     text-align: center;
     margin: 50px 0px 50px;
     font-family: 'Raleway', sans-serif;
-    color: #ed145b;
+    color: #222;
     font-size: 40px;
 }
 
@@ -241,6 +260,10 @@ footer .follow {
     width: 415px;
     display: block;
     border-radius: 5px;
+}
+
+.active {
+    background-color: #ed145b;
 }
 
 @media (max-width: 1335px) {
@@ -283,14 +306,22 @@ footer .follow {
     .img-setting {
         width: 300px;
     }
+
+    .navigation_bar {
+        display: none;
+    }
+
+    .nav {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 990px) {
     .img-setting {
         width: 290px;
     }
-    
-    footer{
+
+    footer {
         justify-content: center;
     }
 }
@@ -346,6 +377,9 @@ footer .follow {
 @media (max-width: 650px) {
     .img-setting {
         width: 260px;
+    }
+    .container-heading{
+        margin: 30px 0px 30px;
     }
 }
 
