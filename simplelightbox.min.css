@@ -53,7 +53,7 @@ body.hidden-scroll {
 .sl-wrapper .sl-counter {
  left:30px;
  z-index:1060;
- font-size:1rem
+ font-size:1.3rem;
 }
 .sl-wrapper .sl-navigation {
  width:100%;
@@ -116,7 +116,7 @@ body.hidden-scroll {
  z-index:10000
 }
 .sl-wrapper .sl-image img {
- margin:0;
+ margin:8px;
  padding:0;
  display:block;
  border:0;
@@ -262,3 +262,5 @@ body.hidden-scroll {
   transform:scale(1.2)
  }
 }
+
+
