@@ -24,8 +24,8 @@
             <div class="side-bar" style="position: relative; z-index: 100;">
                 <div class="menu-bar" id="menu-bar"><i class="fas fa-bars"></i></div>
                 <ul class="side-navigation_bar">
-                    <li><a class="active-side-bar" href="#">HOME</a></li>
-                    <li><a href="#">LOGO</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a class="active-side-bar" href="#">LOGO</a></li>
                     <li><a href="#">ILLUSTRATION</a></li>
                     <li><a href="#">STATONARY</a></li>
                     <li><a href="#">UI/UXDESGIN</a></li>
@@ -160,16 +160,23 @@
 
     </script>
     <script>
-        var btn = document.getElementById('menu-bar');
-        var btn2 = document.querySelector(".side-navigation_bar");
-        btn.addEventListener('click', function() {
+        var menuBtn = document.getElementById('menu-bar');
+        var sideMenuBar = document.querySelector(".side-navigation_bar");
 
-            if (btn2.style.display === "none") {
-                btn2.style.display = "block";
-                btn.style.left = "270px";
+        menuBtn.addEventListener('click', function() {
+
+            if (sideMenuBar.style.display === "block") {
+                sideMenuBar.style.display = 'none';
+                menuBtn.style.left = "0px";
+                menuBtn.innerHTML="<i class='fas fa-bars'></i>";
+                
+
             } else {
-                btn2.style.display = 'none';
-                btn.style.left = "0px";
+
+                sideMenuBar.style.display = "block";
+                menuBtn.innerHTML="<i class='fas fa-times'></i>";
+                menuBtn.style.left = "270px";
+                
             }
 
         });
